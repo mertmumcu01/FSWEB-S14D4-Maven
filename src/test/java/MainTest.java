@@ -71,11 +71,11 @@ public class MainTest {
     @Test
     public void testTrollDataTypes() throws NoSuchFieldException {
         assertThat(troll.getName(), instanceOf(String.class));
-        assertThat(troll.getHitPoints(), instanceOf(Integer.class));
+        assertThat(troll.getHitPoint(), instanceOf(Integer.class));
         assertThat(troll.getDamage(), instanceOf(Double.class));
 
         assertEquals(troll.getName(), "Shrek");
-        assertEquals(troll.getHitPoints(), 1000);
+        assertEquals(troll.getHitPoint(), 1000);
         assertEquals(troll.getDamage(), 100);
     }
 
